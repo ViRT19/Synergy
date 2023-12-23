@@ -103,7 +103,7 @@ public class Lesson35 {
         String yearString1 = Integer.toString(yearInt + 1);
         String monthString = (monthInt < 10) ? "0" + Integer.toString(monthInt) : Integer.toString(monthInt);
         String dayString = (dayInt < 10) ? "0" + Integer.toString(dayInt) : Integer.toString(dayInt);
-        MyClass downloadWebPage = new MyClass();
+        MyClass3 downloadWebPage = new MyClass3();
         builder8.append("https://cbr.ru/scripts/XML_dynamic.asp?date_req1=");
         builder8.append(dayString + "/" + monthString + "/" + yearString0);
         builder8.append("&date_req2=" + dayString + "/" + monthString + "/" + yearString1);
@@ -171,4 +171,4 @@ public class Lesson35 {
         System.out.println("Filename = " + fileInfo.name + ", size = " + fileInfo.size);
     } // main
 
-} // Lesson6
+} // Lesson36

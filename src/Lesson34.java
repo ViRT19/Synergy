@@ -15,7 +15,7 @@ public class Lesson34 {
             arrInt[i] = (int) (Math.random() * 1000);
             System.out.print(arrInt[i] + " ");
         }
-        MyClass max = new MyClass();
+        MyClass3 max = new MyClass3();
         System.out.println("наибольшее " + max.maxOfArray(arrInt));
 
 // 5. Создайте класс, который делает из трех маленьких строк одну большую. Ко всем переменным обращаться можно ТОЛЬКО используя this.
@@ -26,7 +26,7 @@ public class Lesson34 {
             System.out.print((i+1) + ". ");
             arrString[i] = con.nextLine();
         } // for
-        MyClass concatenation = new MyClass();
+        MyClass3 concatenation = new MyClass3();
         System.out.println("Конкатенация " + length + " строк: " + concatenation.concatenation(arrString));
 
 // 6. Создайте класс, который принимает аргументом, какую задачу он должен решить: “найти минимум из 2 чисел”, “найти сумму элементов массива”, “вывести строку с конца”.
@@ -36,7 +36,7 @@ public class Lesson34 {
                 "\n3. Вывод строки с конца." +
                 "\nВаш выбор: ");
         int menuItem = con.nextInt();
-        MyClass javaCode = new MyClass();
+        MyClass3 javaCode = new MyClass3();
         switch (menuItem) {
             case 1: {
                 System.out.print("Введите 2 числа через пробел: ");
@@ -63,4 +63,4 @@ public class Lesson34 {
         } // switch
 
     } // main
-} // Lesson4
+} // Lesson34

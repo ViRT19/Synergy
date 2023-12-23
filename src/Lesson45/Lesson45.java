@@ -1,5 +1,5 @@
-package Lesson5;
-public class Lesson5 {
+package Lesson45;
+public class Lesson45 {
     public static void main(String[] args) {
 // 1. Выведите все даты текущего года.
         Cal cal = new Cal();

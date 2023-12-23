@@ -40,7 +40,7 @@ public class Lesson37 {
 
     private static String quoteWalterWhite() throws IOException {
         String url = "http://www.procitaty.ru/blog/citaty-uoltera-uayta";
-        MyClass myClass = new MyClass();
+        MyClass3 myClass = new MyClass3();
         String page = myClass.downloadWebPage(url);
         final int countQuotes = 15;
         String[] quote = new String[countQuotes];
@@ -64,7 +64,7 @@ public class Lesson37 {
     } // quoteWalterWhite
 
     private static String PhotoDayNasaExplanation(String date) throws IOException {
-        MyClass myClass = new MyClass();
+        MyClass3 myClass = new MyClass3();
         String url1 = "https://apod.nasa.gov/apod/ap";
         String url2 = date + ".html";
         String page = myClass.downloadWebPage(url1 + url2);
@@ -87,7 +87,7 @@ public class Lesson37 {
         int monthInt = Integer.parseInt(date.substring(2, 4));
         int yearInt = Integer.parseInt(date.substring(0, 2));
         for (int i = 0; i < count; i++) {
-            MyClass myClass = new MyClass();
+            MyClass3 myClass = new MyClass3();
             url1 = "https://apod.nasa.gov/apod/";
             url2 = "ap" + date + ".html";
             page = myClass.downloadWebPage(url1 + url2);
@@ -155,7 +155,7 @@ public class Lesson37 {
 
 // 2. Реализуйте метод, который из двух массивов строк собирает третий, в котором чередуются элементы первых двух
         final int countWordsAtArrays = 5;
-        MyClass myClass = new MyClass();
+        MyClass3 myClass = new MyClass3();
         String[] array1 = new String[countWordsAtArrays];
         array1 = myClass.returnRandomWords(countWordsAtArrays);
         String[] array2 = new String[countWordsAtArrays];
@@ -189,7 +189,7 @@ public class Lesson37 {
         String yearString1 = Integer.toString(yearInt + 1);
         String monthString = (monthInt < 10) ? "0" + Integer.toString(monthInt) : Integer.toString(monthInt);
         String dayString = (dayInt < 10) ? "0" + Integer.toString(dayInt) : Integer.toString(dayInt);
-        MyClass downloadWebPage = new MyClass();
+        MyClass3 downloadWebPage = new MyClass3();
         builder8.append("https://cbr.ru/scripts/XML_dynamic.asp?date_req1=");
         builder8.append(dayString + "/" + monthString + "/" + yearString0);
         builder8.append("&date_req2=" + dayString + "/" + monthString + "/" + yearString1);
@@ -230,4 +230,4 @@ public class Lesson37 {
         dayString = (dayInt < 10) ? "0" + Integer.toString(dayInt) : Integer.toString(dayInt);
         PhotoDayNasaToFile(yearString + monthString + dayString, 10);
     } // main
-} // Lesson7
+} // Lesson37

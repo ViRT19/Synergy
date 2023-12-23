@@ -5,7 +5,7 @@ public class Lesson36 {
 // 1. Пользователь вводит 10 слов в массив. Найдите первое слово, в котором есть две гласные буквы подряд
 // Чтобы не вводить 10 слов каждый раз - берём из генератора слов 10 слов.
 // Из-за того, что две гласные подряд встречаются реже, будем искать согласные.
-        MyClass myClass = new MyClass();
+        MyClass3 myClass = new MyClass3();
         final int countWords = 10;
         String[] words = new String[countWords];
         boolean isTwoLetters = false;
@@ -155,4 +155,4 @@ public class Lesson36 {
         System.out.println("Файл " + fixLink + link + " записан в nasa.jpg.");
 
     } // main
-} // Lesson6
+} // Lesson36

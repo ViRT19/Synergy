@@ -3,7 +3,7 @@ package Lesson2;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Lesson2 {
+public class Lesson42 {
     public static void main(String[] args) throws IOException {
 // 1. Что такое конструктор по-умолчанию?
 // 2. Как сделать так, чтобы при каждом создании экземпляра класса, в консоль что-то выводилось? (Слежка за классом :) )

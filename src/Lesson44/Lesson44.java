@@ -1,6 +1,6 @@
 package Lesson4;
 
-public class Lesson4 {
+public class Lesson44 {
     public static void main(String[] args) {
 // Почему наследник всегда можно преобразовать к родителю?
 // У наследника есть все поля и методы родителя. Он скопирован.

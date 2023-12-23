@@ -1,4 +1,4 @@
-package Lesson5;
+package Lesson45;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -68,14 +68,15 @@ public class Cal {
         }
         localDate = LocalDate.of(year, 1, 1);
         DayOfWeek dayOfWeek = localDate.getDayOfWeek();
-        for (int k = numDayOfWeek(dayOfWeek); k < 7; k++)
-            for (int j = 0; j < countDaysInMonth[k]; k++) {
+//        for (int k = numDayOfWeek(dayOfWeek); k < 7; k++)
+//            for (int j = 0; j < countDaysInMonth[k]; k++) {
+//
+//            }
+    } // initCal
 
-            }
-
-
-    void printCal() {
+    public void printCal() {
         for (int k = 0; k < 7; k++)
             System.out.print(cal[0][0][k] + " ");
     } // printCal
+
 }

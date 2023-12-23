@@ -100,7 +100,7 @@ public class Lesson38 {
     public static void main(String[] args) throws IOException {
 
 // 1. Реализуйте методы, max(x,y) - для целых, вещественных чисел, и для строк (в случае строк - возвращает самую длинную)
-        MyClass myClass = new MyClass();
+        MyClass3 myClass = new MyClass3();
         int xInt = (int) (Math.random() * 1000) - 500;
         int yInt = (int) (Math.random() * 1000) - 500;
         System.out.println("Max of int " + xInt + " or " + yInt + " = " + max(xInt, yInt));
@@ -147,4 +147,4 @@ public class Lesson38 {
             System.out.print(array2[i] + " ");
         System.out.println();
     } // main
-} // Lesson8
+} // Lesson38
